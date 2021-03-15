@@ -36,11 +36,10 @@ for (let i = 0; i < totalPads; i++) {
 
 let main = document.getElementById('main')
 
-for (pad in pads){
-    pad["button"] = document.createElement('button')
-    main.appendChild(pad.button)
-    pad["button"].onclick = function () {
-        playNote(pad.noteNumber)
+for (let i = 0; i < pads.length; i++){
+    pads[i]["button"] = document.createElement('button')
+    main.appendChild(pads[i]["button"])
+    pads[i]["button"].onclick = function () {
+        playNote(pads[i].noteNumber)
     }
-
 }
