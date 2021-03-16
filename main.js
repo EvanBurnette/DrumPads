@@ -32,7 +32,6 @@ for (let i = 0; i < totalPads; i++) {
     pads.push(new Pad("pad" + (i + 1).toString(), 36 + i))
 }
 
-
 let main = document.getElementById('main')
 
 for (let i = 0; i < pads.length; i++){
